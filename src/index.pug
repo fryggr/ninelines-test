@@ -1,0 +1,59 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.page
+		.grid-container
+			.content.cell.medium-6.large-4
+				.grid-x
+					.box.box_info.cell.small-12.medium-12.large-12
+						.grid-x
+							.box__photo.cell.small-12.medium-3.large-3
+								img(src="images/photo.jpg" alt="photo")
+							fieldset.cell.small-12.medium-9.large-9
+								+input("Дарья Смирнова", "name").input-info
+								+input("20 октября 1990 года", "birth").input-info
+								+input("Волгоград", "city").input-info
+								+input("Телефон: +79375472808", "contacts").input-info
+						.box__approved
+							img(src="images/approved.png" alt="approved")
+					.box.box_skills.cell.small-12.medium-12.large-12
+						.grid-x
+							fieldset.cell.small-12.medium-12.large-12
+								+title("Навыки").title
+								.grid-x
+									.cell.small-5.medium-3.large-3
+										+checkbox("html5", "html5", "true").input-skills
+									.cell.small-5.medium-3.large-3
+										+checkbox("sass", "sass", "true").input-skills
+									.cell.small-5.medium-3.large-3
+										+checkbox("vanillajs", "vanillajs").input-skills
+									.cell.small-5.medium-3.large-3
+										+checkbox("git", "git", "true").input-skills
+									.cell.small-5.medium-3.large-3
+										+checkbox("css3", "css3", "true").input-skills
+									.cell.small-5.medium-3.large-3
+										+checkbox("less", "less").input-skills
+									.cell.small-5.medium-3.large-3
+										+checkbox("angular", "angular").input-skills
+									.cell.small-5.medium-3.large-3
+										+checkbox("foundation", "foundation", "true").input-skills
+									.cell.small-5.medium-3.large-3
+										+checkbox("бэм", "bem", "true").input-skills
+									.cell.small-5.medium-3.large-3
+										+checkbox("gulp", "gulp", "true").input-skills
+									.cell.small-5.medium-3.large-3
+										+checkbox("jquery", "jquery", "true").input-skills
+									.cell.small-5.medium-3.large-3
+										+checkbox("bootstrap", "bootstrap", "true").input-skills
+					.box.box_javascript.cell.small-12.medium-12.large-12
+						.grid-x
+							.cell.small-12.medium-6.large-6
+								.js-scale
+									img.js-scale__rate(src="images/sprites/png/js-scale.png" alt="js-scale" srcset="images/sprites/png/js-scale@2x.png 2x")
+									img.js-scale__pointer(src="images/sprites/png/pointer.png" alt="pointer" srcset="images/sprites/png/pointer@2x.png 2x")
+							.js-skills.cell.small-12.medium-4.large-4
+								+title("Мой уровень владения Java Script").title
+								.js-skills__numbers.odometer 0

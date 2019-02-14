@@ -1,0 +1,4 @@
+mixin checkbox(placeholder, id, checked)
+	label(for=id)&attributes(attributes)= placeholder
+		input(type="checkbox" placeholder=placeholder id=id checked=checked)
+		span.checkmark
