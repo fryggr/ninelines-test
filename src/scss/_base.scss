@@ -67,12 +67,10 @@ html {
 
 	&__pointer {
 		position: absolute;
-		width: 3.563rem;
-		height: 2.438rem;
 		left: calc(50% - 56px);
-    bottom: -10px;
-		transform-origin: 95% 95%;
-		transform: rotate(60deg);
+    bottom: -9px;
+		transform-origin: 90% 50%;
+		transform: rotate(90deg);
 		animation: 2s linear 1s 1 turnPointer;
 	}
 }
@@ -82,7 +80,7 @@ html {
     transform: rotate(0);
   }
   100% {
-    transform: rotate(60deg);
+    transform: rotate(90deg);
   }
 }
 
